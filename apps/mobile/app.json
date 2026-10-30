@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "SafeWalk AI",
+    "slug": "safewalk-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "safewalkai",
+    "splash": {
+      "backgroundColor": "#070B13"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ai.safewalk.mobile",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SafeWalk AI requires GPS location access during emergency activations to transmit coordinates to your emergency contacts and authorized 112 dispatchers.",
+        "NSMicrophoneUsageDescription": "SafeWalk AI requires microphone access for hands-free emergency voice detection and consented foreground audio evidence capture.",
+        "NSCameraUsageDescription": "SafeWalk AI requires camera access for consented foreground emergency video capture."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#070B13"
+      },
+      "package": "ai.safewalk.mobile",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "RECORD_AUDIO",
+        "CAMERA",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

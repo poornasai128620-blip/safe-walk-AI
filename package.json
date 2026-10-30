@@ -1,0 +1,31 @@
+{
+  "name": "safewalk-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Production-Grade AI-Powered Personal Safety & Emergency Response Startup Platform",
+  "workspaces": [
+    "packages/*",
+    "server",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=server & npm run dev --workspace=apps/web",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:mobile": "npm run start --workspace=apps/mobile",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test --workspace=server",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "keywords": [
+    "personal-safety",
+    "emergency-response",
+    "ai-safety",
+    "sos",
+    "112-integration",
+    "realtime-gps",
+    "cctv-registry"
+  ],
+  "author": "SafeWalk AI Engineering Team",
+  "license": "UNLICENSED"
+}
